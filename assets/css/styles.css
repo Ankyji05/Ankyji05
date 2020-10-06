@@ -359,9 +359,15 @@ img{
   font-weight: var(--font-semi);
   padding: 2rem 0;
 }
+.footer__email{
+  font-size: 1rem;
+  color: var(--second-color);
+  color: #f1f1f1;
+  margin-bottom: var(--mb-2);
+}
 .footer__title{
   font-size: 2rem;
-  margin-bottom: var(--mb-4);
+  margin-bottom: var(--mb-3);
 }
 .footer__social{
   margin-bottom: var(--mb-4);
