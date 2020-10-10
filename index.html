@@ -24,7 +24,7 @@
                         <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
                         <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
                         <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                        <li class="nav__item"><a href="#project" class="nav__link">Projects</a></li>
                         <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                     </ul>
                 </div>
@@ -160,27 +160,27 @@
                     </div>
                     
                     <div>              
-                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
+                        <img src="assets/img/work5.jpg" alt="" class="skills__img">
                     </div>
                 </div>
             </section>
 
             <!--===== WORK =====-->
-            <section class="work section" id="work">
-                <h2 class="section-title">Work</h2>
+            <section class="work section" id="project">
+                <h2 class="section-title">Projects</h2>
 
                 <div class="work__container bd-grid">
-                    <div class="work__img"><a href="https://instagram.com/_ankittripathi?igshid=1h748qfswfoiy"><img src="assets/img/work1.jpg" alt=""></a>
-                        <!-- <img src="assets/img/work1.jpg" alt=""> -->
+                    <div class="work__img"><a href="https://ankyji05.github.io/">
+                        <img src="assets/img/work1.png" alt=""></a>
                     </div>
-                    <div class="work__img">
-                        <img src="assets/img/work2.jpg" alt="">
+                    <div class="work__img"><a href="https://github.com/Ankyji05/dentalproject">
+                        <img src="assets/img/work2.png" alt=""></a>
                     </div>
-                    <div class="work__img">
-                        <img src="assets/img/work3.jpg" alt="">
+                    <div class="work__img"><a href="https://github.com/aptcoder2020/DiscussionForum/tree/ankittripathi">
+                        <img src="assets/img/work3.png" alt=""></a>
                     </div>
-                    <div class="work__img">
-                        <img src="assets/img/work4.jpg" alt="">
+                    <div class="work__img"><a href="https://github.com/Ankyji05/real_estate">
+                        <img src="assets/img/work4.jpeg" alt=""></a>
                     </div>
                     <div class="work__img">
                         <img src="assets/img/work5.jpg" alt="">
@@ -200,7 +200,7 @@
                         <input type="text" placeholder="Name" class="contact__input">
                         <input type="mail" placeholder="Email" class="contact__input">
                         <textarea name="" id="" cols="0" rows="10" placeholder="Message" class="contact__input"></textarea>
-                        <input type="button" value="Submit" class="contact__button button">
+                        <input type="button" value="Submit" class="contact__button button" onclick="myfunction()">
                     </form>
                 </div>
             </section>
@@ -225,5 +225,11 @@
 
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
+        <script>
+            function myfunction(){
+                document.write("Thanks for contacting us . We'll shortly reach to you!");
+            }
+        </script>
+
     </body>
 </html>

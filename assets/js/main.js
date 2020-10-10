@@ -56,6 +56,8 @@ sr.reveal('.work__img',{interval: 200});
 /*SCROLL CONTACT*/
 sr.reveal('.contact__input',{interval: 200}); 
 
-
+// function myfunction(){
+//     document.write("Thanks for contacting us . We'll shortly reach to you!");
+// }
 
 
