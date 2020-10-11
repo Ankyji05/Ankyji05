@@ -32,6 +32,7 @@
                 <div class="nav__toggle" id="nav-toggle">
                     <i class='bx bx-menu'></i>
                 </div>
+                
             </nav>
         </header>
 
@@ -197,11 +198,13 @@
 
                 <div class="contact__container bd-grid">
                     <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
+                        <input type="text" id="mytext1" placeholder="Name" class="contact__input" onblur="myfunction1()">
+                        <input type="mail" id="mytext2" placeholder="Email" class="contact__input" onblur="myfunction2()">
+                        <input type="text" id="mytext3" placeholder="Mobile No." class="contact__input" onblur="myfunction3()">
                         <textarea name="" id="" cols="0" rows="10" placeholder="Message" class="contact__input"></textarea>
                         <input type="button" value="Submit" class="contact__button button" onclick="myfunction()">
                     </form>
+                    <font id="id1" color="red" size=20></font>
                 </div>
             </section>
         </main>
@@ -225,11 +228,6 @@
 
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
-        <script>
-            function myfunction(){
-                document.write("Thanks for contacting us . We'll shortly reach to you!");
-            }
-        </script>
-
+        
     </body>
 </html>

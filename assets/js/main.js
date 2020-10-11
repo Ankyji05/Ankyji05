@@ -56,8 +56,53 @@ sr.reveal('.work__img',{interval: 200});
 /*SCROLL CONTACT*/
 sr.reveal('.contact__input',{interval: 200}); 
 
-// function myfunction(){
-//     document.write("Thanks for contacting us . We'll shortly reach to you!");
-// }
 
+function myfunction(){
+    document.getElementById("id1").setAttribute("color","aqua");
+    document.getElementById("id1").innerHTML="Thanks for contacting us.We'll reach you shortly!";
+}
+
+
+function myfunction1(){
+    var x = document.getElementById("mytext1").value;
+    var regexp= /^[a-zA-Z]+\s[a-zA-Z]+$/;
+    var bool = regexp.test(x);
+    if (bool==true){
+        document.getElementById("id1").setAttribute("color","blue");
+        document.getElementById("id1").innerHTML="you entered correct name";
+    }else{
+        document.getElementById("id1").setAttribute("color","red");
+        document.getElementById("id1").innerHTML="you entered wrong name";
+        alert("Valid Format FirstName LastName ");
+    }
+}
+
+function myfunction2(){
+    var x = document.getElementById("mytext2").value;
+    var regexp= /^[a-zA-Z][_|a-zA-Z|0-9]+\@([a-z]{2,5})\.(com|edu|net|in)$/;
+    var bool = regexp.test(x);
+    if (bool==true){
+        document.getElementById("id1").setAttribute("color","blue");
+        document.getElementById("id1").innerHTML="you entered correct email";
+    }else{
+        document.getElementById("id1").setAttribute("color","red");
+        document.getElementById("id1").innerHTML="you entered wrong email";
+        alert("Valid format userName@abc.domain valid domains (edu,com,net,in)");
+        alert = function() {};
+    }
+}
+
+function myfunction3(){
+    var x = document.getElementById("mytext3").value;
+    var regexp= /^\d{10}$/;
+    var bool = regexp.test(x);
+    if (bool==true){
+        document.getElementById("id1").setAttribute("color","blue");
+        document.getElementById("id1").innerHTML="you entered correct number";
+    }else{
+        document.getElementById("id1").setAttribute("color","red");
+        document.getElementById("id1").innerHTML="you entered wrong number";
+        alert("Valid format 999999XXXX");
+    }
+}
 
